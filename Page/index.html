@@ -10,45 +10,46 @@
 
 <header class="page-header">
   <a class="page-header__logo">
-    <img class="page-header__logo" src="img/logotype.svg" alt="Cat Energy">
+    <img class="page-header__logo-image" src="img/logotype.svg" alt="Cat Energy">
   </a>
   <nav class="main-nav">
     <button class="main-nav__toggle" type="button">Открыть меню</button>
     <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item site-list__item--active">
+      <ul class="main-nav__list menu">
+        <li class="menu__item menu__item--active">
           <a>Главная</a>
         </li>
-        <li class="site-list__item">
+        <li class="menu__item">
           <a href="catalog.html">Каталог продукции</a>
         </li>
-        <li class="site-list__item">
+        <li class="menu__item">
           <a href="form.html">Подбор программы</a>
         </li>
       </ul>
     </div>
   </nav>
+  //ПРОМО СЮДА
 </header>
 
-<main class="page-main">
+<main>
 
   <section class="categories">
     <div class="categories__wrapper">
-      <div class="categories__slim">
-        <h2 class="categories__title">Похудение</h2>
-        <p class="categories__text">
+      <div class="category">
+        <h2 class="category__title">Похудение</h2>
+        <p class="category__text">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
           поможет вашему питомцу сбросить лишний вес.
         </p>
-        <a class="categories__link" href="#">Каталог Slim</a>
+        <a class="category__link" href="#">Каталог Slim</a>
       </div>
-      <div class="categories__pro">
-        <h2 class="categories__title">Набор массы</h2>
-        <p class="categories__text">
+      <div class="category">
+        <h2 class="category__title">Набор массы</h2>
+        <p class="category__text">
           Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
         </p>
-        <a class="categories__link" href="#">Каталог Pro</a>
+        <a class="category__link" href="#">Каталог Pro</a>
       </div>
     </div>
   </section>
@@ -56,22 +57,22 @@
   <section class="advantages">
     <h2 class="advantages__title">Как это работает</h2>
     <ul class="advantages-list">
-      <li class="advantages-list__item">
+      <li class="advantages-list__item advantages--leaf">
         <p class="advantages-list__text">
           Функциональное питание содержит только полезные питательные вещества.
         </p>
       </li>
-      <li class="advantages-list__item">
+      <li class="advantages-list__item advantages--water">
         <p class="advantages-list__text">
           Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
         </p>
       </li>
-      <li class="advantages-list__item">
+      <li class="advantages-list__item advantages--fork">
         <p class="advantages-list__text">
           Замените один-два приема обычной еды на наше фунцкциональное питание.
         </p>
       </li>
-      <li class="advantages-list__item">
+      <li class="advantages-list__item advantages--time">
         <p class="advantages-list__text">
           Уже через месяц наслаждайтесь изменениями к лучшему
           вашего питомца!
@@ -81,63 +82,67 @@
   </section>
 
   <section class="result">
-    <header class="result-header">
       <h1 class="result-header__title">
         Живой пример
       </h1>
-    </header>
-    <div class="result__wrapper">
       <div class="result__info">
         <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без
           изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <ul class="result-list">
-          <li class="result-list__item">
+        <ul class="result__list">
+          <li class="result__list-item">
             <p>5 кг</p>
             <span>Снижение веса</span>
           </li>
-          <li class="result-list__item">
+          <li class="result__list-item">
             <p>60 дней</p>
             <span>Затрачено времени</span>
           </li>
         </ul>
-
       </div>
       <div class="result__slider">
-
+        <p class="result__price">Затраты на питание: 15 000 руб.</p>
+        <div class="slide">
+          <img src="img/slide-cat.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="img/slide-cat.png" alt="">
+        </div>
       </div>
-    </div>
   </section>
 
   <section class="contact">
-    <header class="contact-header">
-      <h2 class="contact-header__title">приглашаем
+    <header class="contact__header">
+      <h2 class="contact__header-title">приглашаем
         к сотрудничеству
         дилеров!</h2>
-      <p class="contact-header__text">ул. Большая Конюшенная, д. 19/8
+      <p class="contact__header-text">ул. Большая Конюшенная, д. 19/8
         <br>
         Санкт-Петербург</p>
     </header>
+    <div class="contact__map map">
+      <img src="img/map.png" alt="">
+    </div>
   </section>
 
 </main>
 
 <footer class="page-footer">
-  <a class="footer__logo">
-    <img class="footer__logo" src="img/footer-logo.svg" alt="Cat Energy">
+  <a class="page-footer__logo">
+    <img class="page-footer__logo" src="img/footer-logo.svg" alt="Cat Energy">
   </a>
-  <ul class="footer-social__list">
-    <li class="footer-social__item footer-social--vk">
+  <ul class="page-footer-social__list">
+    <li class="page-footer-social__item footer-social--vk">
       <a href="#">Вконтакте</a>
     </li>
-    <li class="footer-social__item footer-social--inst">
+    <li class="page-footer-social__item footer-social--inst">
       <a href="#">Инстаграм</a>
     </li>
-    <li class="footer-social__item footer-social--fb">
+    <li class="page-footer-social__item footer-social--fb">
       <a href="#">Фэйсбук</a>
     </li>
   </ul>
-  <a class="footer-academy__link" href="#">HTML Academy</a>
+  <a class="page-footer-academy__link" href="#">HTML Academy</a>
 </footer>
 <script src="js/less.js"></script>
 </body>
