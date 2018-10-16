@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<header class="page-header">
+  <a class="page-header__logo">
+    <img class="page-header__logo-image" src="img/logotype.svg" alt="Cat Energy">
+  </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">Открыть меню</button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list menu">
+        <li class="menu__item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="menu__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="menu__item menu__item--active">
+          <a>Подбор программы</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+<main>
+  <section class="content">
+    <h1 class="content__title">Подбор программы</h1>
+    <p class="content__info">Заполните анкету и мы подберем программу для питания вашего кота</p>
+    <form class="content__cat-info" action="">
+      <label for="name">Имя:*</label>
+      <input id="name" type="text">
+      <label for="weight">Вес (Кг):*</label>
+      <input id="weight" type="text">
+      <label for="age">Возраст (Лет):</label>
+      <input id="age" type="text">
+    </form>
+    <form class="content__target">
+      <label for="no_weight">Похудение</label>
+      <input id="no_weight" type="radio">
+      <label for="mass">Набор массы</label>
+      <input id="mass" type="radio">
+      <label for="no">Не знаю (Нужен ваш совет)</label>
+      <input id="no" type="radio">
+    </form>
+  </section>
+  <section class="your-contact">
+    <h2 class="your-contact__title">Контактные данные (владельца кота)</h2>
+    <form action="">
+      <label for="email">E-mail:*</label>
+      <input id="email" type="email">
+      <label for="phone">Телефон:*</label>
+      <input id="phone" type="text">
+    </form>
+  </section>
+  <section class="comment">
+    <h2 class="comment__title">Комментарий</h2>
+    <label for="cat">Расскажите обо всех повадках кота</label>
+    <textarea name="" id="cat" cols="30" rows="10"></textarea>
+  </section>
+  <section class="more">
+    <h2 class="more__title">Дополнительно</h2>
+    <form action="">
+      <label for="sugar">Сахарозаменитель</label>
+      <input id="sugar" type="checkbox">
+      <label for="water">Питьевая вода</label>
+      <input id="water" type="checkbox">
+      <label for="milk">Молоко</label>
+      <input id="milk" type="checkbox">
+      <label for="vitamin">Витамины</label>
+      <input id="vitamin" type="checkbox">
+    </form>
+  </section>
+  <section class="contact">
+    <header class="contact__header">
+      <h2 class="contact__title">приглашаем
+        к сотрудничеству
+        дилеров!</h2>
+      <p class="contact__text">ул. Большая Конюшенная, д. 19/8
+        <br>
+        Санкт-Петербург</p>
+    </header>
+    <div class="contact__map map">
+      <img src="img/map.png" alt="">
+    </div>
+  </section>
+</main>
+<footer class="page-footer">
+  <a class="page-footer__logo">
+    <img class="page-footer__logo" src="img/footer-logo.svg" alt="Cat Energy">
+  </a>
+  <ul class="page-footer-social__list social">
+    <li class="social__item social__item--vk">
+      <a href="#">Вконтакте</a>
+    </li>
+    <li class="social__item social__item--inst">
+      <a href="#">Инстаграм</a>
+    </li>
+    <li class="social__item social__item--fb">
+      <a href="#">Фэйсбук</a>
+    </li>
+  </ul>
+  <a class="page-footer-academy__link" href="#">HTML Academy</a>
+</footer>
+<script src="js/less.js"></script>
+</body>
+</html>
