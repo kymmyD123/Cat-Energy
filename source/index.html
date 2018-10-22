@@ -27,30 +27,32 @@
         <span></span>
       </button>
       <div class="header-bg">
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list menu">
-            <li class="menu__item menu__item--active">
-              <a>Главная</a>
-            </li>
-            <li class="menu__item">
-              <a href="catalog.html">Каталог продукции</a>
-            </li>
-            <li class="menu__item">
-              <a href="form.html">Подбор программы</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list menu">
+              <li class="menu__item menu__item--active">
+                <a>Главная</a>
+              </li>
+              <li class="menu__item">
+                <a href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="menu__item">
+                <a href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
   </div>
   <section class="promo">
     <div class="promo__wrapper">
+      <div class="promo__text-wrapper">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__info">Занялся собой? Займись котом!</p>
         <img src="img/promo.png" alt="" class="promo__image">
         <a href="#" class="promo__button">Подобрать программу</a>
+      </div>
     </div>
   </section>
 </header>
@@ -77,7 +79,7 @@
     </div>
   </section>
   <section class="advantages">
-      <div class="container">
+    <div class="container">
       <h2 class="advantages__title">Как это работает</h2>
       <ul class="advantages-list">
         <li class="advantages-list__item advantages-list__item--leaf">
@@ -102,44 +104,49 @@
           </p>
         </li>
       </ul>
-      </div>
-    </section>
+    </div>
+  </section>
   <section class="result">
     <div class="container">
       <h1 class="result-header__title">
         Живой пример
       </h1>
-      <div class="result__info">
-        <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
-          Отличный результат без
-          изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
-        <ul class="result__list">
-          <li class="result__list-item">
-            <p>5 кг</p>
-            <span>Снижение веса</span>
-          </li>
-          <li class="result__list-item">
-            <p>60 дней</p>
-            <span>Затрачено времени</span>
-          </li>
-          <li class="result__list-item">
-            <p class="result__price">Затраты на питание: 15 000 руб.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="result__slider">
-        <div class="slide">
-          <img src="img/slide-cat.png" alt="">
+    </div>
+    <div class="result__wrapper">
+      <div class="result__text-wrapper">
+        <div class="result__info">
+          <p class="result__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
+            Отличный результат без
+            изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
+          <ul class="result__list">
+            <li class="result__list-item">
+              <p>5 кг</p>
+              <span>Снижение веса</span>
+            </li>
+            <li class="result__list-item">
+              <p>60 дней</p>
+              <span>Затрачено времени</span>
+            </li>
+            <li class="result__list-item">
+              <p class="result__price">Затраты на питание: <b>15 000 руб.</b></p>
+            </li>
+          </ul>
         </div>
-        <div class="slide">
-          <img src="img/slide-cat.png" alt="">
+        <div class="result__slider">
+          <div class="slide">
+            <img src="img/slide-cat.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="img/slide-cat.png" alt="">
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="contact">
-    <div class="container">
+    <div class="contact__wrapper">
+      <div class="contact__wrapper-banner">
       <header class="contact__header">
         <h2 class="contact__title">приглашаем
           к сотрудничеству
@@ -148,9 +155,13 @@
           <br>
           Санкт-Петербург</p>
       </header>
+      </div>
     </div>
     <div class="contact__map map">
       <img src="img/map.png" alt="">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad81994e8595cb673f6e62152274679253b5e852e9eb54dfdb97530fbd1449792&amp;source=constructor"
+        width="100%" height="398" frameborder="0"></iframe>
     </div>
   </section>
 
@@ -158,15 +169,15 @@
 
 <footer class="page-footer">
   <div class="container">
-    <a class="page-footer__logo">
+    <a class="page-footer__logo" href="index.html">
       <img class="page-footer__logo" src="img/footer-logo.svg.png" alt="Cat Energy">
     </a>
     <ul class="page-footer-social__list social">
       <li class="social__item social__item--vk">
-        <a href="#">Вконтакте</a>
+        <a href="https://vk.com/jesusdev">Вконтакте</a>
       </li>
       <li class="social__item social__item--inst">
-        <a href="#">Инстаграм</a>
+        <a href="https://www.instagram.com/nakonechn11/">Инстаграм</a>
       </li>
       <li class="social__item social__item--fb">
         <a href="#">Фэйсбук</a>
@@ -184,5 +195,6 @@
 </footer>
 
 <script src="js/less.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
