@@ -14,6 +14,10 @@ p, h1, h2, h3, ul, li {
   margin: 0 auto;
 }
 
+.page-header__desktop-logo {
+  display: none;
+}
+
 .page-header__tablet-logo {
   display: none;
 }
@@ -410,13 +414,17 @@ p, h1, h2, h3, ul, li {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 24px;
-  line-height: 11px;
+  line-height: 30px;
 }
 
 .result__list-item span {
+  padding-bottom: 6px;
+
   text-transform: lowercase;
   font-size: 12px;
   line-height: 7px;
+
+  background-color: #f2f2f2;
 }
 
 .result__list-item .result__price {
@@ -843,6 +851,11 @@ p, h1, h2, h3, ul, li {
   background-color: #f2f2f2;
 }
 
+
+.page-footer {
+  padding-bottom: 15px;
+}
+
 svg {
   width: 27px;
   height: 34px;
@@ -873,6 +886,10 @@ svg {
     display: none;
   }
 
+  .page-header__desktop-logo {
+    display: none;
+  }
+
   .menu__item {
     display: block;
     margin-right: 30px;
@@ -882,9 +899,11 @@ svg {
     text-align: left;
   }
 
-  .menu__item--active {
+  .menu__item--active a {
     position: relative;
     padding-top: 20px;
+
+    border-bottom: 2px solid #66cc33;
   }
 
   .menu__item--active::before {
@@ -1158,12 +1177,25 @@ svg {
     justify-content: flex-start;
   }
 
+  .result__list-item {
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+  }
+
+  .result__list-item span {
+    background-color: #ffffff;
+  }
+
   .result__list-item:nth-child(1) {
     margin-right: 42px;
   }
 
   .result__list-item:nth-child(2) {
     margin-right: 170px;
+  }
+
+  .result__list-item:nth-child(3) {
+    border: none;
   }
 
   .result__list-item .result__price {
@@ -1238,8 +1270,8 @@ svg {
   }
 
   .page-footer-social__list {
-     margin-left: 0;
-     margin-bottom: 15px;
+    margin-left: 0;
+    margin-bottom: 15px;
   }
 
   .page-footer-social__list::before {
@@ -1260,6 +1292,10 @@ svg {
     justify-content: flex-start;
   }
 
+  .page-footer {
+    padding-bottom: 0;
+  }
+
   svg {
     margin-left: 20px;
   }
@@ -1269,5 +1305,126 @@ svg {
   .container {
     width: 1220px;
     padding: 0 40px;
+  }
+
+  .page-header {
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: right 0;
+
+  }
+
+  .page-header__wrapper {
+    width: 1220px;
+    padding: 24px 30px;
+    display: flex;
+    flex-wrap: nowrap;
+
+    background-color: transparent;
+  }
+
+  .page-header__tablet-logo {
+    display: none;
+  }
+
+  .page-header__desktop-logo {
+    display: block;
+  }
+
+  .menu__item--active a {
+    border-bottom: 2px solid #ffffff;
+  }
+
+  .menu__item a {
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .promo__wrapper {
+    width: 1220px;
+    padding: 0 120px;
+    padding-bottom: 495px;
+    margin: 0 auto;
+
+    background: none;
+  }
+
+  .promo {
+    background-image: url("../img/index-can.png");
+    background-repeat: no-repeat;
+    background-position: 60% 0;
+  }
+
+  .categories__wrapper {
+    width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+
+  .category__title {
+    padding-left: 160px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .category__title--nomass::before {
+    content: "";
+
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #66cc33;
+    background-image: url("../img/cat-slim.svg");
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+
+  .category__title--mass::before {
+    content: "";
+
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background-color: #66cc33;
+    background-image: url("../img/cat-pro.svg");
+    background-position: 0 0;
+    border-radius: 50%;
+  }
+
+  .category__text {
+    width: 420px;
+  }
+
+  .category {
+    width: 570px;
+  }
+
+  .advantages__title {
+    margin-bottom: 75px;
+  }
+
+  .advantages-list {
+    justify-content: space-between;
+  }
+
+  .advantages-list__item {
+    width: 190px;
+    margin-left: 0;
+    margin-right: 40px;
+    margin-bottom: 70px;
+    padding: 100px 31px 78px 0;
+  }
+
+  .advantages-list__item:nth-child(2n) {
+    margin-right: 40px;
   }
 }
