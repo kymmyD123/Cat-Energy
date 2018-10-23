@@ -626,6 +626,10 @@ p, h1, h2, h3, ul, li {
   padding-bottom: 25px;
 }
 
+.catalog__item--desktop {
+  display: none;
+}
+
 .catalog__item::before {
   content: "";
 
@@ -702,6 +706,8 @@ p, h1, h2, h3, ul, li {
 
 .catalog__more img {
   margin-bottom: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .catalog__more-title {
@@ -882,6 +888,10 @@ svg {
   height: 34px;
 }
 
+.promo__desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 708px;
@@ -900,7 +910,15 @@ svg {
     width: 708px;
     padding: 24px 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+  }
+
+  .promo__desktop {
+    display: block;
+  }
+
+  .promo__mobile {
+    display: none;
   }
 
   .page-header__logo {
@@ -1358,9 +1376,114 @@ svg {
     padding-bottom: 0;
   }
 
+  .catalog__title {
+    padding-bottom: 170px;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .catalog__title::before {
+    content: "";
+
+    display: none;
+  }
+
+  .item__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item__title {
+    width: 140px;
+
+    font-size: 20px;
+  }
+
+  .item__button {
+    width: 250px;
+  }
+
+  .catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .catalog__item {
+    padding: 0 40px;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    margin-bottom: 140px;
+
+    background-color: #f2f2f2;
+  }
+
+  .catalog__item a {
+    margin-bottom: 30px;
+  }
+
+  .catalog__item--desktop {
+    display: block;
+  }
+
+  .catalog__item--mobile {
+    display: none;
+  }
+
+  .catalog__item--small .catalog__item--desktop {
+    position: absolute;
+    top: -45px;
+    left: 86px;
+  }
+
+  .catalog__item--big .catalog__item--desktop {
+    position: absolute;
+    top: -80px;
+    left: 66px;
+  }
+
+  .catalog__item:nth-child(7) {
+    margin-bottom: 0;
+  }
+
+  .catalog__item a {
+    display: block;
+    text-align: center;
+  }
+
+  .catalog__item::before {
+    content: "";
+
+    display: none;
+  }
+
+  .catalog__more img {
+    margin-bottom: 53px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .catalog__more {
+    padding: 40px;
+  }
+
+  .catalog__more-title {
+    margin-bottom: 30px;
+  }
+
+  .catalog__more-info {
+    margin-bottom: 91px;
+  }
+
+  .catalog__more-show {
+    width: 250px;
+  }
+
   .extra__wrapper {
     width: 708px;
-    padding: 0 30px;
+    //padding: 0 30px;
     margin: 0 auto;
   }
 
@@ -1369,6 +1492,11 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .extra__title {
+    font-size: 36px;
+    line-height: 36px;
   }
 
   .extra__item h3 {
@@ -1381,7 +1509,7 @@ svg {
     margin-right: 50px;
   }
 
-  .extra__button{
+  .extra__button {
     width: 100%;
   }
 
@@ -1403,6 +1531,10 @@ svg {
     text-align: left;
   }
 
+  .menu__item--active-catalog a {
+    border-bottom: 2px solid #000000;
+  }
+
   svg {
     margin-left: 20px;
   }
@@ -1414,7 +1546,7 @@ svg {
     padding: 0 40px;
   }
 
-  .page-header {
+  .page-header__wrapper {
     background-image: url("../img/index-background-desktop.jpg");
     background-repeat: no-repeat;
     background-position: right 0;
@@ -1425,7 +1557,7 @@ svg {
     width: 1220px;
     padding: 24px 30px;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     background-color: transparent;
   }
@@ -1631,6 +1763,83 @@ svg {
     bottom: 15%;
 
     background-color: #ffffff;
+  }
+
+  .catalog__item:nth-child(7) {
+    margin-bottom: 140px;
+  }
+
+  .catalog__item--small .catalog__item--desktop {
+    left: 45px;
+  }
+
+  .catalog__item--big .catalog__item--desktop {
+    left: 29px;
+  }
+
+  .page-header__catalog-wrapper {
+    background-image: none;
+  }
+
+  .menu__item--catalog a {
+    color: #000;
+  }
+
+  .menu__item--active-catalog a {
+    border-bottom: 2px solid #000000;
+  }
+
+  .item__title {
+    margin-bottom: 30px;
+  }
+
+  .item__button {
+    width: 170px;
+  }
+
+  .catalog__more-title {
+    width: 170px;
+  }
+
+  .catalog__more-info {
+    width: 170px;
+  }
+
+  .catalog__more-show {
+    width: 170px;
+  }
+
+  .extra__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .extra__banner img {
+    margin-left: 96px;
+  }
+
+  .extra__banner p {
+    padding-top: 0;
+    padding-right: 0;
+    margin-left: 42px;
+
+    text-align: center;
+  }
+
+  .extra__banner {
+    padding: 50px 0;
+    width: 245px;
+    display: block;
+    background-position: 0 0;
+
+
+    margin-bottom: 35px;
+    margin-top: 40px;
+    background-image: url(http://localhost:63342/Cat-Energy/source/img/gift-photo-mobile.png);
+    background-repeat: no-repeat;
   }
 
   iframe {
