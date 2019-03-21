@@ -777,10 +777,11 @@ p, h1, h2, h3, ul, li {
   flex-wrap: wrap;
 }
 
-.extra__item .extra__item-wrapper {
+.extra__item-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 280px;
 }
 
 .extra__item:nth-child(1)::after {
@@ -1817,6 +1818,25 @@ svg {
     align-items: center;
   }
 
+  .extra__item {
+    display:  flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .extra__item-wrapper {
+    width: 610px;
+    padding-right: 40px;
+  }
+
+  .extra__item-wrapper h3 {
+    width: 193px;
+  }
+
+  .extra__button {
+    width: 245px;
+  }
+
   .extra__banner img {
     margin-left: 96px;
   }
@@ -1838,7 +1858,7 @@ svg {
 
     margin-bottom: 35px;
     margin-top: 40px;
-    background-image: url(http://localhost:63342/Cat-Energy/source/img/gift-photo-mobile.png);
+    background-image: url("../img/gift-photo-mobile.png");
     background-repeat: no-repeat;
   }
 
